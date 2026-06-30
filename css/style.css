@@ -248,6 +248,21 @@ section { padding: 64px 0; }
 .social svg { width: 20px; height: 20px; fill: currentColor; }
 .social:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
 
+/* Connect / Follow CTA band (brand gradient, closes the landing page) */
+.connect {
+  background: linear-gradient(135deg, #0b1f3a 0%, #143a6b 55%, #1d6fb8 100%);
+  color: #fff;
+}
+.connect .section-kicker { color: #9fd0f7; }
+.connect .section-title { color: #fff; }
+.connect .lead { color: rgba(255, 255, 255, .9); }
+.connect .social {
+  background: rgba(255, 255, 255, .12);
+  color: #fff;
+  border-color: rgba(255, 255, 255, .28);
+}
+.connect .social:hover { background: #fff; color: var(--navy); border-color: #fff; }
+
 /* ---------------- Card grids ---------------- */
 .grid { display: grid; gap: 28px; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
