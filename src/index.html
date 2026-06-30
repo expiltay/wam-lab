@@ -2,7 +2,7 @@
 <section class="hero">
   <div class="wrap hero-inner">
     <p class="eyebrow">Purdue University</p>
-    <h1>Well-Being AND Measurement Lab</h1>
+    <h1>Well-Being, AI, and Measurement Lab</h1>
     <p class="sub">Director: <span>Louis Tay</span> &nbsp;&middot;&nbsp; @Purdue University</p>
   </div>
   <div class="scroll-cue">Scroll</div>
@@ -62,34 +62,58 @@
   </div>
 </section>
 
-<!-- NEWS -->
-<section class="section-band">
+<!-- LATEST POSTS (Bluesky, auto-updating; mirrors cross-posts via Buffer) -->
+<section id="latest-posts" hidden>
   <div class="wrap">
-    <p class="section-kicker">In the News</p>
-    <h2 class="section-title">Media coverage</h2>
-    <div class="grid grid-3 mt">
-      <article class="card">
-        <div class="thumb"><img src="images/ladders.jpg" alt="Ladders"></div>
-        <div class="body">
-          <h3><a href="https://www.theladders.com/career-advice/the-3-things-that-keep-people-happy-into-old-age-according-to-science" target="_blank" rel="noopener">The 3 Things That Keep People Happy Into Old Age, According to Science</a></h3>
-          <p class="meta">&mdash; Ladders &middot; March 2020</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="thumb"><img src="images/psypost.jpg" alt="PsyPost"></div>
-        <div class="body">
-          <h3><a href="https://www.psypost.org/2018/08/national-gender-inequality-does-not-predict-life-satisfaction-differences-between-men-and-women-51905" target="_blank" rel="noopener">National Gender Inequality Does Not Predict Life Satisfaction Differences Between Men And Women</a></h3>
-          <p class="meta">&mdash; PsyPost &middot; August 2018</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="thumb"><img src="images/indystar.jpeg" alt="IndyStar"></div>
-        <div class="body">
-          <h3><a href="https://www.indystar.com/story/news/2018/02/16/money-cant-buy-you-love-but-what-happiness-purdue-research-says-yes-point/333375002/" target="_blank" rel="noopener">Money Can't Buy You Love, But What About Happiness? Purdue Research Says Yes, to a Point</a></h3>
-          <p class="meta">&mdash; IndyStar &middot; February 2018</p>
-        </div>
-      </article>
+    <p class="section-kicker">Latest Posts</p>
+    <h2 class="section-title">From social media</h2>
+    <div class="grid grid-3 mt" id="bsky-feed"></div>
+    <p class="center mt"><a class="btn btn-ghost" href="https://bsky.app/profile/louistay.bsky.social" target="_blank" rel="noopener">See more on Bluesky</a></p>
+  </div>
+</section>
+<script>
+(function () {
+  var handle = "louistay.bsky.social";
+  var api = "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=" + handle + "&limit=8&filter=posts_no_replies";
+  function esc(s) { return (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function fmt(s) { return esc(s).replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>').replace(/\n/g, "<br>"); }
+  fetch(api).then(function (r) { return r.json(); }).then(function (d) {
+    var feed = (d && d.feed || []).filter(function (f) { return f.post && f.post.record && !f.post.record.reply; }).slice(0, 3);
+    if (!feed.length) return;
+    document.getElementById("bsky-feed").innerHTML = feed.map(function (f) {
+      var p = f.post, rec = p.record || {};
+      var rkey = (p.uri || "").split("/").pop();
+      var url = "https://bsky.app/profile/" + handle + "/post/" + rkey;
+      var dstr = new Date(rec.createdAt || p.indexedAt).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+      var img = (p.embed && p.embed.images && p.embed.images[0])
+        ? '<div class="thumb"><img src="' + p.embed.images[0].thumb + '" alt="" loading="lazy"></div>' : "";
+      return '<article class="card">' + img + '<div class="body"><p style="flex:1 1 auto">' + fmt(rec.text || "") +
+        '</p><p class="meta"><a href="' + url + '" target="_blank" rel="noopener">View on Bluesky</a> &middot; ' + dstr + '</p></div></article>';
+    }).join("");
+    document.getElementById("latest-posts").hidden = false;
+  }).catch(function () { /* leave section hidden on any error */ });
+})();
+</script>
+
+<!-- FOLLOW -->
+<section class="section-band">
+  <div class="wrap center">
+    <p class="section-kicker">Connect</p>
+    <h2 class="section-title">Follow the Lab</h2>
+    <p class="lead" style="margin:0 auto 1.6em">Keep up with the latest research and writing from Dr. Louis Tay.</p>
+    <div class="social-row">
+      <a class="social" href="https://www.linkedin.com/in/louistay/" target="_blank" rel="noopener" aria-label="Follow on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        LinkedIn
+      </a>
+      <a class="social" href="https://bsky.app/profile/louistay.bsky.social" target="_blank" rel="noopener" aria-label="Follow on Bluesky">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.07 3.16c2.69 2.02 5.58 6.11 6.64 8.31.06.13.11.24.16.34.05-.1.1-.21.16-.34 1.06-2.2 3.95-6.29 6.64-8.31C20.81 1.7 23 .53 23 3.04c0 .5-.29 4.21-.46 4.81-.59 2.09-2.72 2.62-4.62 2.3 3.32.56 4.16 2.43 2.34 4.3-3.46 3.55-4.97-.89-5.36-2.02-.07-.21-.1-.3-.1-.22 0-.08-.03.01-.1.22-.39 1.13-1.9 5.57-5.36 2.02-1.82-1.87-.98-3.74 2.34-4.3-1.9.32-4.03-.21-4.62-2.3C1.29 7.25 1 3.54 1 3.04 1 .53 3.19 1.7 5.07 3.16z"/></svg>
+        Bluesky
+      </a>
+      <a class="social" href="https://twitter.com/LouisTaySC" target="_blank" rel="noopener" aria-label="Follow on X (Twitter)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        X / Twitter
+      </a>
     </div>
-    <p class="center mt"><a class="btn btn-ghost" href="news.html">See all News Items</a></p>
   </div>
 </section>

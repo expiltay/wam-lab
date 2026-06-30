@@ -1,0 +1,59 @@
+name: Update News (weekly)
+
+# Checks a Google Alerts feed for new media coverage, merges it into news.json,
+# rebuilds the site, and opens a Pull Request for review. Nothing goes live until
+# you approve & merge that PR.
+#
+# One-time setup (after the repo is on GitHub):
+#   1. Create a Google Alert (https://www.google.com/alerts) for terms like:
+#        "Louis Tay" well-being   /  Purdue happiness research  / etc.
+#      Set "Deliver to" = RSS feed, then copy the feed URL.
+#   2. Repo Settings -> Secrets and variables -> Actions -> New repository secret
+#        Name:  NEWS_FEED_URL   Value: <the Google Alerts feed URL>
+#   3. Repo Settings -> Actions -> General -> Workflow permissions:
+#        enable "Allow GitHub Actions to create and approve pull requests".
+#
+# Run it on demand any time from the Actions tab ("Run workflow").
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"      # Mondays 13:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch new news items
+        env:
+          NEWS_FEED_URL: ${{ secrets.NEWS_FEED_URL }}
+          NEWS_KEYWORDS: ${{ vars.NEWS_KEYWORDS }}   # optional; blank = sensible defaults
+        run: node scripts/fetch-news.js
+
+      - name: Rebuild site
+        run: node build.js
+
+      - name: Open pull request with any new items
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: news-bot/update
+          commit-message: "news: add new media coverage from feed"
+          title: "📰 New media coverage to review"
+          body: |
+            The weekly news bot found new media coverage matching the lab's keywords.
+
+            - Review the items added to `news.json` and the rebuilt `news.html` in this PR.
+            - Edit/remove anything off-topic, fix the **source** or **date** display if needed.
+            - Merge to publish. Close without merging to discard.
+          labels: news, automated
+          delete-branch: true

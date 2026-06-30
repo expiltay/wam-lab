@@ -1,0 +1,25 @@
+# Well-Being, AI, and Measurement Lab (WAM Lab)
+
+> The WAM Lab, directed by Dr. Louis Tay (William C. Byham Professor of Industrial-Organizational Psychology) at Purdue University, conducts interdisciplinary research at the intersection of well-being scholarship, advanced psychological measurement, data science, and AI conversational agents. Website: https://www.wam-lab.com
+
+## Key facts
+- Director: Louis Tay, Purdue University, Department of Psychological Sciences.
+- Contact: stay@purdue.edu, (765) 494-0715.
+- Focus areas: subjective and psychological well-being; character strengths and vocational interests; psychological measurement and methodology (IRT, latent class, multilevel modeling); data science, machine learning, and AI; AI conversational agents and human flourishing.
+- Louis Tay is the creator of ExpiWell, a leading Experience Sampling (ESM) and Ecological Momentary Assessment (EMA) research platform.
+
+## Pages
+- [Home](https://www.wam-lab.com/index.html): Lab overview, mission, and recent publications.
+- [Research](https://www.wam-lab.com/research.html): Research areas — taxonomies, continuum specification, data science/ML/AI, measurement & methodology, and well-being.
+- [People](https://www.wam-lab.com/people.html): Director, graduate students, postdocs, staff, alumni; also how to join the lab.
+- [Publications](https://www.wam-lab.com/publications.html): Peer-reviewed publications with DOIs.
+- [Resources](https://www.wam-lab.com/resources.html): Free validated psychological scales and methodological tools (SETPOINT, CABIN, CAPTION, CIT/BIT, HELPS, RAISE, ALI, Subjective Underemployment Scale, IRT measurement-equivalence guide), each with dimensions and downloadable instruments.
+- [Talks](https://www.wam-lab.com/talks.html): Talks and webinars (with video) on well-being measurement, big data, ML bias, and experience sampling.
+- [Books](https://www.wam-lab.com/books.html): Edited handbooks and volumes on positive psychology, well-being, the positive humanities, big data, and measurement.
+- [EMA](https://www.wam-lab.com/ema.html): ExpiWell — the experience sampling (ESM) and ecological momentary assessment (EMA) platform created by Louis Tay.
+
+## Links
+- Google Scholar: https://scholar.google.com/citations?hl=en&user=5_1xpscAAAAJ
+- Purdue faculty page: https://hhs.purdue.edu/directory/louis-tay/
+- Personal site: https://louistay.ai
+- ExpiWell: https://www.expiwell.com

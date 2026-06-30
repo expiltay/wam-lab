@@ -1,0 +1,67 @@
+name: Update Publications (weekly)
+
+# Checks Google Scholar (via SerpAPI) or OpenAlex (via ORCID) for new papers,
+# merges them into publications.json, rebuilds the site, and opens a Pull
+# Request for review. Nothing publishes until you approve & merge that PR.
+#
+# One-time setup (after the repo is on GitHub) — pick ONE source:
+#
+#   A) Google Scholar (your exact profile) via SerpAPI:
+#      - Sign up at https://serpapi.com (free tier covers a weekly check).
+#      - Repo Settings -> Secrets and variables -> Actions:
+#          New repository secret:  SERPAPI_KEY = <your SerpAPI key>
+#      - (Optional) variable PUBS_SCHOLAR_ID if your Scholar ID ever changes
+#        (default is 5_1xpscAAAAJ).
+#
+#   B) OpenAlex (free, no key) via your ORCID:
+#      - Repo Settings -> Secrets and variables -> Actions -> Variables:
+#          New variable:  PUBS_ORCID = 0000-0000-0000-0000
+#
+#   Then: Settings -> Actions -> General -> Workflow permissions ->
+#         enable "Allow GitHub Actions to create and approve pull requests".
+#
+# Run on demand any time from the Actions tab ("Run workflow").
+
+on:
+  schedule:
+    - cron: "0 12 * * 2"      # Tuesdays 12:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch latest publications
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          PUBS_SCHOLAR_ID: ${{ vars.PUBS_SCHOLAR_ID }}
+          PUBS_ORCID: ${{ vars.PUBS_ORCID }}
+        run: node scripts/fetch-publications.js
+
+      - name: Rebuild site
+        run: node build.js
+
+      - name: Open pull request with any new papers
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: pubs-bot/update
+          commit-message: "publications: add new paper(s) from Scholar/OpenAlex"
+          title: "📚 New publication(s) to review"
+          body: |
+            New paper(s) were found on your Google Scholar / OpenAlex profile and added to `publications.json`.
+
+            - Review the entries in this PR (check the **authors**, **venue**, **year**, and **link**).
+            - Add topic **tags** if you'd like them to appear (e.g., "Well-being", "Measurement and methodology").
+            - Merge to publish on the Publications page. Close without merging to discard.
+          labels: publications, automated
+          delete-branch: true
