@@ -1,0 +1,20 @@
+# Treat these as binary — never apply EOL (CRLF/LF) conversion
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.webp binary
+*.gif  binary
+*.ico  binary
+*.zip  binary
+*.woff binary
+*.woff2 binary
+
+# Normalize text files to LF in the repo
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.xml  text eol=lf
+*.txt  text eol=lf
+*.md   text eol=lf
