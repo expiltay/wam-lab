@@ -125,7 +125,7 @@ const NAV = [
 const headerHTML = `<header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="index.html"><img src="images/wamlab-logo.png" width="280" height="58" alt="WAM Lab — Well-Being, AI, and Measurement Lab"></a>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="var n=document.getElementById('nav');this.setAttribute('aria-expanded',n.classList.toggle('open'))"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button>
     <ul class="nav-links" id="nav">
 ${NAV.map(([href, label]) => `      <li><a href="${href}">${label}</a></li>`).join("\n")}
     </ul>

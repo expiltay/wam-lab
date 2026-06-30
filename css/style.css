@@ -105,13 +105,18 @@ img { max-width: 100%; height: auto; display: block; }
 
 .nav-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
   background: none;
   border: 0;
-  font-size: 28px;
-  line-height: 1;
   cursor: pointer;
   color: var(--ink);
 }
+.nav-toggle svg { width: 26px; height: 26px; display: block; }
 
 /* ---------------- Hero (home) ---------------- */
 .hero {
@@ -597,7 +602,7 @@ section { padding: 64px 0; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 1024px) {
-  .nav-toggle { display: block; }
+  .nav-toggle { display: flex; }
   .nav-links {
     display: none;
     position: absolute;
