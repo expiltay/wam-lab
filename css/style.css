@@ -80,7 +80,7 @@ img { max-width: 100%; height: auto; display: block; }
   min-height: var(--nav-h);
   gap: 20px;
 }
-.brand img { height: 58px; width: auto; }
+.brand img { height: 48px; width: auto; }
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -617,7 +617,7 @@ section { padding: 64px 0; }
 @media (max-width: 700px) {
   :root { --nav-h: 74px; }
   .wrap { padding: 0 18px; }
-  .brand img { height: 46px; }
+  .brand img { height: 40px; }
   .grid-3, .grid-2, .people-grid { grid-template-columns: 1fr; }
   .person-director { grid-template-columns: 1fr; }
   .person-director .photo { max-width: 240px; }
