@@ -246,11 +246,12 @@ function renderPublications() {
       ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>`
       : esc(p.title);
     const cite = `${esc(p.authors || "")} (${y}). <em>${esc(p.venue || "")}.</em>`;
-    const tags = (p.tags || []).map(t => " &middot; " + esc(t)).join("");
-    return `      <div class="entry" data-year="${y}">\n` +
+    const tagText = (p.tags || []).map(t => " &middot; " + esc(t)).join("");
+    const tagAttr = (p.tags || []).map(esc).join("|");
+    return `      <div class="entry" data-year="${y}" data-tags="${tagAttr}">\n` +
            `        <h3>${titleHtml}</h3>\n` +
            `        <p class="cite">${cite}</p>\n` +
-           `        <p class="tags"><span class="yr">${y}</span>${tags}</p>\n` +
+           `        <p class="tags"><span class="yr">${y}</span>${tagText}</p>\n` +
            `      </div>`;
   }).join("\n\n");
 }
@@ -270,11 +271,15 @@ function renderRecentPublications(n) {
   }).join("\n");
 }
 
-function renderPubFilter() {
+function renderPubYearFilter() {
   const years = [...new Set(readPublications().map(p => p.year).filter(Boolean))].sort((a, b) => b - a);
-  const btns = [`      <button data-yr="all" class="active">All</button>`]
-    .concat(years.map(y => `      <button data-yr="${y}">${y}</button>`));
-  return btns.join("\n");
+  return [`          <button data-val="all" class="active">All</button>`]
+    .concat(years.map(y => `          <button data-val="${y}">${y}</button>`)).join("\n");
+}
+function renderPubTopicFilter() {
+  const topics = [...new Set(readPublications().flatMap(p => p.tags || []))].sort();
+  return [`          <button data-val="all" class="active">All</button>`]
+    .concat(topics.map(t => `          <button data-val="${esc(t)}">${esc(t)}</button>`)).join("\n");
 }
 
 const srcDir = path.join(__dirname, "src");
@@ -285,7 +290,8 @@ for (const slug of Object.keys(PAGES)) {
   let main = fs.readFileSync(fragPath, "utf8");
   if (main.includes("<!--NEWS_ITEMS-->")) main = main.replace("<!--NEWS_ITEMS-->", renderNews());
   if (main.includes("<!--PUBLICATION_ITEMS-->")) main = main.replace("<!--PUBLICATION_ITEMS-->", renderPublications());
-  if (main.includes("<!--PUB_FILTER-->")) main = main.replace("<!--PUB_FILTER-->", renderPubFilter());
+  if (main.includes("<!--PUB_YEAR_FILTER-->")) main = main.replace("<!--PUB_YEAR_FILTER-->", renderPubYearFilter());
+  if (main.includes("<!--PUB_TOPIC_FILTER-->")) main = main.replace("<!--PUB_TOPIC_FILTER-->", renderPubTopicFilter());
   if (main.includes("<!--RECENT_PUBLICATIONS-->")) main = main.replace("<!--RECENT_PUBLICATIONS-->", renderRecentPublications(3));
   // Lazy-load images that don't already declare a loading strategy (perf / Core Web Vitals).
   main = main.replace(/<img (?![^>]*\bloading=)/gi, '<img loading="lazy" decoding="async" ');

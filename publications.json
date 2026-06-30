@@ -1,5 +1,320 @@
 [
   {
+    "title": "The baby and the bathwater: On the need for substantive–methodological synergy in organizational research",
+    "authors": "Hofmans, J., Morin, A. J. S., Breitsohl, H., Ceulemans, E., Chénard‐Poirier, L. A., Driver, C., … & Wille, B. (incl. Tay, L.)",
+    "year": 2021,
+    "venue": "Industrial and Organizational Psychology",
+    "url": "https://doi.org/10.1017/iop.2021.111",
+    "doi": "10.1017/iop.2021.111",
+    "tags": [
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "Integrating Psychometrics and Computing Perspectives on Bias and Fairness in Affective Computing: A case study of automated video interviews",
+    "authors": "Booth, B. M., Hickman, L., Subburaj, S. K., Tay, L., Woo, S. E., & D’Mello, S. K.",
+    "year": 2021,
+    "venue": "IEEE Signal Processing Magazine",
+    "url": "https://doi.org/10.1109/msp.2021.3106615",
+    "doi": "10.1109/msp.2021.3106615",
+    "tags": [
+      "Selection and assessment",
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "Building Community Well-Being in Higher Education: An Introduction to the Special Issue",
+    "authors": "Tay, L.",
+    "year": 2021,
+    "venue": "International Journal of Community Well-Being",
+    "url": "https://doi.org/10.1007/s42413-021-00144-4",
+    "doi": "10.1007/s42413-021-00144-4",
+    "tags": [
+      "Well-being",
+      "Education"
+    ]
+  },
+  {
+    "title": "Experience Sampling Methodology: Conceptual and Technological Advances for Understanding and Assessing Variability in Well-being Research",
+    "authors": "Thapa, S., Tay, L., & Hou, D.",
+    "year": 2021,
+    "venue": "Research in occupational stress and well being",
+    "url": "https://doi.org/10.1108/s1479-355520210000019007",
+    "doi": "10.1108/s1479-355520210000019007",
+    "tags": [
+      "Well-being",
+      "Occupation",
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "Arts and Humanities Interventions for Flourishing in Healthy Adults: A Mixed Studies Systematic Review",
+    "authors": "Shim, Y., Jebb, A. T., Tay, L., & Pawelski, J. O.",
+    "year": 2021,
+    "venue": "Review of General Psychology",
+    "url": "https://doi.org/10.1177/10892680211021350",
+    "doi": "10.1177/10892680211021350",
+    "tags": [
+      "Well-being"
+    ]
+  },
+  {
+    "title": "Automated video interview personality assessments: Reliability, validity, and generalizability investigations.",
+    "authors": "Hickman, L., Bosch, N., Ng, V., Saef, R., Tay, L., & Woo, S. E.",
+    "year": 2021,
+    "venue": "Journal of Applied Psychology",
+    "url": "https://doi.org/10.1037/apl0000695",
+    "doi": "10.1037/apl0000695",
+    "tags": [
+      "Selection and assessment",
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "Developing and evaluating language‐based machine learning algorithms for inferring applicant personality in video interviews",
+    "authors": "Hickman, L., Saef, R., Ng, V., Woo, S. E., Tay, L., & Bosch, N.",
+    "year": 2021,
+    "venue": "Human Resource Management Journal",
+    "url": "https://doi.org/10.1111/1748-8583.12356",
+    "doi": "10.1111/1748-8583.12356",
+    "tags": [
+      "Selection and assessment",
+      "Artificial intelligence",
+      "Big data and data science",
+      "Education"
+    ]
+  },
+  {
+    "title": "A Review of Key Likert Scale Development Advances: 1995–2019",
+    "authors": "Jebb, A. T., Ng, V., & Tay, L.",
+    "year": 2021,
+    "venue": "Frontiers in Psychology",
+    "url": "https://doi.org/10.3389/fpsyg.2021.637547",
+    "doi": "10.3389/fpsyg.2021.637547",
+    "tags": [
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "Conducting mobile-enabled ecological momentary intervention research in positive psychology: key considerations and recommended practices",
+    "authors": "Shim, Y., Scotney, V. S., & Tay, L.",
+    "year": 2021,
+    "venue": "The Journal of Positive Psychology",
+    "url": "https://doi.org/10.1080/17439760.2021.1913642",
+    "doi": "10.1080/17439760.2021.1913642",
+    "tags": [
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "From Data to Causes III: Bayesian Priors for General Cross-Lagged Panel Models (GCLM)",
+    "authors": "Zyphur, M. J., Hamaker, E. L., Tay, L., Voelkle, M. C., Preacher, K. J., Zhang, Z., … & Diener, E.",
+    "year": 2021,
+    "venue": "Frontiers in Psychology",
+    "url": "https://doi.org/10.3389/fpsyg.2021.612251",
+    "doi": "10.3389/fpsyg.2021.612251",
+    "tags": [
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "Life Satisfaction and Subsequent Physical, Behavioral, and Psychosocial Health in Older Adults",
+    "authors": "Kim, E. S., Delaney, S., Tay, L., Chen, Y., Diener, E., & VanderWeele, T. J.",
+    "year": 2021,
+    "venue": "Milbank Quarterly",
+    "url": "https://doi.org/10.1111/1468-0009.12497",
+    "doi": "10.1111/1468-0009.12497",
+    "tags": [
+      "Well-being"
+    ]
+  },
+  {
+    "title": "Text Preprocessing for Text Mining in Organizational Research: Review and Recommendations",
+    "authors": "Hickman, L., Thapa, S., Tay, L., Cao, M., & Srinivasan, P.",
+    "year": 2020,
+    "venue": "Organizational Research Methods",
+    "url": "https://doi.org/10.1177/1094428120971683",
+    "doi": "10.1177/1094428120971683",
+    "tags": [
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "The Science and Practice of Item Response Theory in Organizations",
+    "authors": "Lang, J. W. B., & Tay, L.",
+    "year": 2020,
+    "venue": "Annual Review of Organizational Psychology and Organizational Behavior",
+    "url": "https://doi.org/10.1146/annurev-orgpsych-012420-061705",
+    "doi": "10.1146/annurev-orgpsych-012420-061705",
+    "tags": [
+      "Item response theory"
+    ]
+  },
+  {
+    "title": "The impact of the Syrian conflict on population well-being",
+    "authors": "Cheung, F., Kube, A., Tay, L., Diener, E., Jackson, J. J., Lucas, R. E., Ni, M. Y., & Leung, G.",
+    "year": 2020,
+    "venue": "Nature Communications",
+    "url": "https://doi.org/10.1038/s41467-020-17369-0",
+    "doi": "10.1038/s41467-020-17369-0",
+    "tags": [
+      "Well-being"
+    ]
+  },
+  {
+    "title": "Psychometric and Validity Issues in Machine Learning Approaches to Personality Assessment: A Focus on Social Media Text Mining",
+    "authors": "Tay, L., Woo, S. E., Hickman, L., & Saef, R.",
+    "year": 2020,
+    "venue": "European Journal of Personality",
+    "url": "https://doi.org/10.1002/per.2290",
+    "doi": "10.1002/per.2290",
+    "tags": [
+      "Artificial intelligence",
+      "Big data and data science",
+      "Measurement and methodology",
+      "Education"
+    ]
+  },
+  {
+    "title": "Personality Affect Construal Theory",
+    "authors": "Thapa, S., Beck, E. D., & Tay, L.",
+    "year": 2020,
+    "venue": "Cambridge University Press eBooks",
+    "url": "https://doi.org/10.1017/9781108573887.004",
+    "doi": "10.1017/9781108573887.004",
+    "tags": [
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "Brief well-being assessments, or nothing at all?",
+    "authors": "VanderWeele, T. J., Trudel‐Fitzgerald, C., Allin, P., Farrelly, C., Fletcher, G., Frederick, D. E., … & Kubzansky, L. D. (incl. Tay, L.)",
+    "year": 2020,
+    "venue": "Preventive Medicine",
+    "url": "https://doi.org/10.1016/j.ypmed.2020.106095",
+    "doi": "10.1016/j.ypmed.2020.106095",
+    "tags": [
+      "Well-being"
+    ]
+  },
+  {
+    "title": "The Development and Validation of a Multidimensional Forced-Choice Format Character Measure: Testing the Thurstonian IRT Approach",
+    "authors": "Ng, V., Lee, P., Ho, M. R., Kuykendall, L., Stark, S., & Tay, L.",
+    "year": 2020,
+    "venue": "Journal of Personality Assessment",
+    "url": "https://doi.org/10.1080/00223891.2020.1739056",
+    "doi": "10.1080/00223891.2020.1739056",
+    "tags": [
+      "Item response theory",
+      "Measurement and methodology",
+      "Construct validation",
+      "Taxonomy"
+    ]
+  },
+  {
+    "title": "An identity-based integrative needs model of crafting: Crafting within and across life domains.",
+    "authors": "Bloom, J. D., Vaziri, H., Tay, L., & Kujanpää, M.",
+    "year": 2020,
+    "venue": "Journal of Applied Psychology",
+    "url": "https://doi.org/10.1037/apl0000495",
+    "doi": "10.1037/apl0000495",
+    "tags": [
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "Do differences between individuals who are healthy weight or overweight on self-report measures of disinhibited eating and restrained eating reflect reality or item “bias”?",
+    "authors": "Forbush, K. T., Song, Q. C., Tay, L., Gould, S. R., Chapa, D. A. N., Cushing, C. C., & Ptomey, L. T.",
+    "year": 2020,
+    "venue": "Psychological Assessment",
+    "url": "https://doi.org/10.1037/pas0000810",
+    "doi": "10.1037/pas0000810",
+    "tags": [
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "Subjective Well-Being Around the World: Trends and Predictors Across the Life Span",
+    "authors": "Jebb, A. T., Morrison, M., Tay, L., & Diener, E.",
+    "year": 2020,
+    "venue": "Psychological Science",
+    "url": "https://doi.org/10.1177/0956797619898826",
+    "doi": "10.1177/0956797619898826",
+    "tags": [
+      "Well-being"
+    ]
+  },
+  {
+    "title": "Current recommendations on the selection of measures for well-being",
+    "authors": "VanderWeele, T. J., Trudel‐Fitzgerald, C., Allin, P., Farrelly, C., Fletcher, G., Frederick, D. E., … & Kubzansky, L. D. (incl. Tay, L.)",
+    "year": 2020,
+    "venue": "Preventive Medicine",
+    "url": "https://doi.org/10.1016/j.ypmed.2020.106004",
+    "doi": "10.1016/j.ypmed.2020.106004",
+    "tags": [
+      "Well-being",
+      "Selection and assessment",
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "The manipulation of affect: A meta-analysis of affect induction procedures.",
+    "authors": "Joseph, D. L., Chan, M. Y., Heintzelman, S. J., Tay, L., Diener, E., & Scotney, V. S.",
+    "year": 2020,
+    "venue": "Psychological Bulletin",
+    "url": "https://doi.org/10.1037/bul0000224",
+    "doi": "10.1037/bul0000224",
+    "tags": [
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "Lost in Translation: The Construct Representation of Character Virtues",
+    "authors": "Ng, V., & Tay, L.",
+    "year": 2020,
+    "venue": "Perspectives on Psychological Science",
+    "url": "https://doi.org/10.1177/1745691619886014",
+    "doi": "10.1177/1745691619886014",
+    "tags": [
+      "Measurement and methodology",
+      "Construct validation"
+    ]
+  },
+  {
+    "title": "Comparing attitudinal learning of large enrolment active learning and lecture classes",
+    "authors": "Watson, W. R., Watson, S. L., Magar, S. T., & Tay, L.",
+    "year": 2020,
+    "venue": "Innovations in Education and Teaching International",
+    "url": "https://doi.org/10.1080/14703297.2019.1711440",
+    "doi": "10.1080/14703297.2019.1711440",
+    "tags": [
+      "Education"
+    ]
+  },
+  {
+    "title": "Big data for enhancing measurement quality.",
+    "authors": "Woo, S. E., Tay, L., Jebb, A. T., Ford, M. T., & Kern, M. L.",
+    "year": 2020,
+    "venue": "American Psychological Association eBooks",
+    "url": "https://doi.org/10.1037/0000193-004",
+    "doi": "10.1037/0000193-004",
+    "tags": [
+      "Big data and data science",
+      "Measurement and methodology"
+    ]
+  },
+  {
+    "title": "The Effect of Employee Proactive Personality and Felt Responsibility on Individual Corporate Social Responsibility Behaviors: The CSR Context Matters",
+    "authors": "Mallory, D. B., Rupp, D. E., Pandey, N., & Tay, L.",
+    "year": 2020,
+    "venue": "Journal of Sustainability Research",
+    "url": "https://doi.org/10.20900/jsr20210002",
+    "doi": "10.20900/jsr20210002",
+    "tags": [
+      "Occupation"
+    ]
+  },
+  {
     "title": "Comparing behavioral cues of self- versus other-assessed authenticity using automated video interviews",
     "authors": "Liou, G., & Tay, L.",
     "year": 2026,

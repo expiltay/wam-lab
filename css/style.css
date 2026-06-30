@@ -365,7 +365,15 @@ section { padding: 64px 0; }
 }
 .dl a:hover { background: var(--blue); color: #fff; }
 
-/* Publication year filter */
+/* Publication filters (year + topic) */
+.pub-filters { display: flex; flex-direction: column; gap: 14px; margin-bottom: 1em; }
+.pub-filter-group { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 12px; }
+.pub-filter-label {
+  font-family: "Cairo", sans-serif; text-transform: uppercase; letter-spacing: .08em;
+  font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 52px;
+}
+.pub-filter { display: flex; flex-wrap: wrap; gap: 8px; font-family: "Cairo", sans-serif; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+.pub-count { color: var(--muted); font-size: .9rem; margin: 0 0 1.4em; }
 .pub-filter button {
   background: var(--band);
   border: 1px solid var(--line);

@@ -2,15 +2,27 @@
   <div class="wrap">
     <p class="section-kicker">Publications</p>
     <h1>Publications</h1>
-    <p class="lead">Peer-reviewed work from the lab. Titles link to the publisher or DOI. For the complete, always-current list, see Dr. Tay&rsquo;s <a href="https://scholar.google.com/citations?hl=en&amp;user=5_1xpscAAAAJ" target="_blank" rel="noopener">Google Scholar</a> profile.</p>
+    <p class="lead">A selection of peer-reviewed work from <strong>approximately the last five years</strong>. Titles link to the publisher or DOI. For the complete, always-current list of publications, see Dr.&nbsp;Tay&rsquo;s <a href="https://scholar.google.com/citations?hl=en&amp;user=5_1xpscAAAAJ" target="_blank" rel="noopener">Google Scholar</a> profile. Use the filters below to browse by year or topic.</p>
   </div>
 </section>
 
 <section class="section-tight">
   <div class="wrap">
-    <div class="pub-filter" id="pubFilter" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:.5em;font-family:'Cairo',sans-serif;text-transform:uppercase;letter-spacing:.05em;font-size:13px">
-<!--PUB_FILTER-->
+    <div class="pub-filters">
+      <div class="pub-filter-group">
+        <span class="pub-filter-label">Year</span>
+        <div class="pub-filter" id="pubYear">
+<!--PUB_YEAR_FILTER-->
+        </div>
+      </div>
+      <div class="pub-filter-group">
+        <span class="pub-filter-label">Topic</span>
+        <div class="pub-filter" id="pubTopic">
+<!--PUB_TOPIC_FILTER-->
+        </div>
+      </div>
     </div>
+    <p class="pub-count" id="pubCount"></p>
 
     <div class="entry-list" id="pubList">
 <!--PUBLICATION_ITEMS-->
@@ -19,16 +31,37 @@
 </section>
 
 <script>
-(function(){
-  var bar=document.getElementById('pubFilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button'); if(!b)return;
-    var yr=b.getAttribute('data-yr');
-    bar.querySelectorAll('button').forEach(function(x){x.classList.toggle('active',x===b);});
-    document.querySelectorAll('#pubList .entry').forEach(function(en){
-      en.style.display=(yr==='all'||en.getAttribute('data-year')===yr)?'':'none';
+(function () {
+  var selYear = "all", selTopic = "all";
+  var list = document.getElementById("pubList");
+  var countEl = document.getElementById("pubCount");
+  function apply() {
+    var shown = 0;
+    list.querySelectorAll(".entry").forEach(function (en) {
+      var y = en.getAttribute("data-year");
+      var tags = (en.getAttribute("data-tags") || "").split("|");
+      var okY = selYear === "all" || y === selYear;
+      var okT = selTopic === "all" || tags.indexOf(selTopic) > -1;
+      var show = okY && okT;
+      en.style.display = show ? "" : "none";
+      if (show) shown++;
     });
-  });
+    if (countEl) countEl.textContent = "Showing " + shown + " publication" + (shown === 1 ? "" : "s") +
+      (selYear === "all" && selTopic === "all" ? "" : " (filtered)");
+  }
+  function wire(barId, setter) {
+    var bar = document.getElementById(barId);
+    if (!bar) return;
+    bar.addEventListener("click", function (e) {
+      var b = e.target.closest("button");
+      if (!b) return;
+      bar.querySelectorAll("button").forEach(function (x) { x.classList.toggle("active", x === b); });
+      setter(b.getAttribute("data-val"));
+      apply();
+    });
+  }
+  wire("pubYear", function (v) { selYear = v; });
+  wire("pubTopic", function (v) { selTopic = v; });
+  apply();
 })();
 </script>
