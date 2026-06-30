@@ -6,7 +6,11 @@
     "venue": "Scientific Reports",
     "url": "https://doi.org/10.1038/s41598-026-59551-2",
     "doi": "10.1038/s41598-026-59551-2",
-    "tags": []
+    "tags": [
+      "Artificial intelligence",
+      "Big data and data science",
+      "Measurement and methodology"
+    ]
   },
   {
     "title": "Understanding critical thinking in generative artificial intelligence use: Development, validation, and correlates of the critical thinking in AI use scale",
@@ -15,7 +19,11 @@
     "venue": "Computers in Human Behavior Reports",
     "url": "https://doi.org/10.1016/j.chbr.2026.101103",
     "doi": "10.1016/j.chbr.2026.101103",
-    "tags": []
+    "tags": [
+      "Artificial intelligence",
+      "Construct validation",
+      "Measurement and methodology"
+    ]
   },
   {
     "title": "Aligning Artificial Intelligence with Worker Health, Well-Being, and Safety: An Occupational Health Psychology Agenda",
@@ -24,7 +32,10 @@
     "venue": "Occupational Health Science",
     "url": "https://doi.org/10.1007/s41542-026-00262-5",
     "doi": "10.1007/s41542-026-00262-5",
-    "tags": []
+    "tags": [
+      "Artificial intelligence",
+      "Well-being"
+    ]
   },
   {
     "title": "Selecting Employees Who Protect and Promote the Well‐Being of Others: Commentary on König et al. (2026)",
@@ -33,7 +44,10 @@
     "venue": "International Journal of Selection and Assessment",
     "url": "https://doi.org/10.1111/ijsa.70064",
     "doi": "10.1111/ijsa.70064",
-    "tags": []
+    "tags": [
+      "Well-being",
+      "Selection and assessment"
+    ]
   },
   {
     "title": "The paths to interests: Motivation profiles in interest development",
@@ -42,7 +56,10 @@
     "venue": "Journal of Vocational Behavior",
     "url": "https://doi.org/10.1016/j.jvb.2025.104194",
     "doi": "10.1016/j.jvb.2025.104194",
-    "tags": []
+    "tags": [
+      "Vocational interests",
+      "Measurement and methodology"
+    ]
   },
   {
     "title": "Quantitative advances in the study of emotion regulation at work",
@@ -51,7 +68,10 @@
     "venue": "Edward Elgar Publishing eBooks",
     "url": "https://doi.org/10.4337/9781035314607.00030",
     "doi": "10.4337/9781035314607.00030",
-    "tags": []
+    "tags": [
+      "Measurement and methodology",
+      "Well-being"
+    ]
   },
   {
     "title": "Beliefs about seeking and receiving help: a mixed-methods analysis",
@@ -60,7 +80,10 @@
     "venue": "The Journal of Positive Psychology",
     "url": "https://doi.org/10.1080/17439760.2025.2549765",
     "doi": "10.1080/17439760.2025.2549765",
-    "tags": []
+    "tags": [
+      "Well-being",
+      "Construct validation"
+    ]
   },
   {
     "title": "Inspired by the positive humanities: a psychologist’s take",
@@ -69,7 +92,9 @@
     "venue": "The Journal of Positive Psychology",
     "url": "https://doi.org/10.1080/17439760.2025.2549769",
     "doi": "10.1080/17439760.2025.2549769",
-    "tags": []
+    "tags": [
+      "Well-being"
+    ]
   },
   {
     "title": "College Student Well-Being: Explaining Academic and Behavioral Outcomes from a Representative College Student Sample",
@@ -78,7 +103,11 @@
     "venue": "Journal of Happiness Studies",
     "url": "https://doi.org/10.1007/s10902-025-00906-3",
     "doi": "10.1007/s10902-025-00906-3",
-    "tags": []
+    "tags": [
+      "Well-being",
+      "Measurement and methodology",
+      "Education"
+    ]
   },
   {
     "title": "Happy Work, Happy Life? A Replication and Comparison of the Longitudinal Effects Between Job and Life Satisfaction Using Continuous Time Meta‐Analysis",
@@ -87,7 +116,10 @@
     "venue": "Journal of Organizational Behavior",
     "url": "https://doi.org/10.1002/job.2861",
     "doi": "10.1002/job.2861",
-    "tags": []
+    "tags": [
+      "Well-being",
+      "Measurement and methodology"
+    ]
   },
   {
     "title": "A comparison of the response-pattern-based faking detection methods.",
@@ -96,7 +128,11 @@
     "venue": "Journal of Applied Psychology",
     "url": "https://doi.org/10.1037/apl0001261",
     "doi": "10.1037/apl0001261",
-    "tags": []
+    "tags": [
+      "Measurement and methodology",
+      "Item response theory",
+      "Selection and assessment"
+    ]
   },
   {
     "title": "VALID: A Checklist-Based Approach for Improving Validity in Psychological Research",
@@ -105,7 +141,10 @@
     "venue": "Advances in Methods and Practices in Psychological Science",
     "url": "https://doi.org/10.1177/25152459241306432",
     "doi": "10.1177/25152459241306432",
-    "tags": []
+    "tags": [
+      "Measurement and methodology",
+      "Construct validation"
+    ]
   },
   {
     "title": "Whither bias goes, I will go: An integrative, systematic review of algorithmic bias mitigation.",
@@ -114,7 +153,11 @@
     "venue": "Journal of Applied Psychology",
     "url": "https://doi.org/10.1037/apl0001255",
     "doi": "10.1037/apl0001255",
-    "tags": []
+    "tags": [
+      "Artificial intelligence",
+      "Big data and data science",
+      "Selection and assessment"
+    ]
   },
   {
     "title": "Automated speech recognition bias in personnel selection: The case of automatically scored job interviews.",
@@ -123,7 +166,11 @@
     "venue": "Journal of Applied Psychology",
     "url": "https://doi.org/10.1037/apl0001247",
     "doi": "10.1037/apl0001247",
-    "tags": []
+    "tags": [
+      "Artificial intelligence",
+      "Big data and data science",
+      "Selection and assessment"
+    ]
   },
   {
     "title": "Exploring a Language-Based Interest Assessment: Predicting Vocational Interests on Social Media Using Natural Language Processing",
@@ -132,7 +179,11 @@
     "venue": "Journal of Career Assessment",
     "url": "https://doi.org/10.1177/10690727241289125",
     "doi": "10.1177/10690727241289125",
-    "tags": []
+    "tags": [
+      "Artificial intelligence",
+      "Big data and data science",
+      "Vocational interests"
+    ]
   },
   {
     "title": "Are automated video interviews smart enough? Behavioral modes, reliability, validity, and bias of machine learning cognitive ability assessments.",
@@ -141,7 +192,11 @@
     "venue": "Journal of Applied Psychology",
     "url": "https://doi.org/10.1037/apl0001236",
     "doi": "10.1037/apl0001236",
-    "tags": []
+    "tags": [
+      "Artificial intelligence",
+      "Big data and data science",
+      "Selection and assessment"
+    ]
   },
   {
     "title": "One Size Does Not Fit All: Unraveling Item Response Process Heterogeneity Using the Mixture Dominance-Unfolding Model (MixDUM)",
@@ -150,7 +205,10 @@
     "venue": "Organizational Research Methods",
     "url": "https://doi.org/10.1177/10944281241271323",
     "doi": "10.1177/10944281241271323",
-    "tags": []
+    "tags": [
+      "Item response theory",
+      "Measurement and methodology"
+    ]
   },
   {
     "title": "Killing Two Birds with One Stone: Accounting for Unfolding Item Response Process and Response Styles Using Unfolding Item Response Tree Models",
@@ -159,7 +217,10 @@
     "venue": "Multivariate Behavioral Research",
     "url": "https://doi.org/10.1080/00273171.2024.2394607",
     "doi": "10.1080/00273171.2024.2394607",
-    "tags": []
+    "tags": [
+      "Item response theory",
+      "Measurement and methodology"
+    ]
   },
   {
     "title": "Artificial intelligence, machine learning, and big data: Improvements to the science of people at work and applications to practice",
@@ -168,7 +229,10 @@
     "venue": "Personnel Psychology",
     "url": "https://doi.org/10.1111/peps.12643",
     "doi": "10.1111/peps.12643",
-    "tags": []
+    "tags": [
+      "Artificial intelligence",
+      "Big data and data science"
+    ]
   },
   {
     "title": "Happiness in India",
@@ -177,7 +241,9 @@
     "venue": "Science across cultures",
     "url": "https://doi.org/10.1007/978-94-024-2258-0_1",
     "doi": "10.1007/978-94-024-2258-0_1",
-    "tags": []
+    "tags": [
+      "Well-being"
+    ]
   },
   {
     "title": "A cross-cultural examination of temporal orientation through everyday language on social media",
@@ -186,7 +252,9 @@
     "venue": "PLoS ONE, 19(3)",
     "url": "https://doi.org/10.1371/journal.pone.0292963",
     "doi": "10.1371/journal.pone.0292963",
-    "tags": []
+    "tags": [
+      "Big data and data science"
+    ]
   },
   {
     "title": "Measuring SETPOINT vocational interest dimensions: The development and validation of three short scales",
@@ -356,7 +424,8 @@
     "tags": [
       "Big data and data science",
       "Measurement and methodology",
-      "Item response theory"
+      "Item response theory",
+      "Artificial intelligence"
     ]
   },
   {

@@ -87,6 +87,7 @@ function structuredData(slug) {
           p.venue ? { "isPartOf": { "@type": "Periodical", "name": p.venue.replace(/,?\s*\d+(\(\d+\))?.*$/, "").trim() || p.venue } } : {},
           p.url ? { "url": p.url } : {},
           p.doi ? { "sameAs": "https://doi.org/" + p.doi } : {},
+          (p.tags && p.tags.length) ? { "keywords": p.tags.join(", ") } : {},
           { "author": { "@type": "Person", "name": "Louis Tay" } }
         )
       }))
@@ -254,6 +255,21 @@ function renderPublications() {
   }).join("\n\n");
 }
 
+function renderRecentPublications(n) {
+  return readPublications().slice(0, n || 3).map(function (p) {
+    const titleHtml = p.url
+      ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>`
+      : esc(p.title);
+    const cite = `${esc(p.authors || "")} (${p.year || ""}). <em>${esc(p.venue || "")}.</em>`;
+    const meta = p.doi ? `${p.year} &middot; DOI: ${esc(p.doi)}` : `${p.year || ""}`;
+    return `      <article class="card"><div class="body">\n` +
+           `        <h3>${titleHtml}</h3>\n` +
+           `        <p class="cite">${cite}</p>\n` +
+           `        <p class="meta">${meta}</p>\n` +
+           `      </div></article>`;
+  }).join("\n");
+}
+
 function renderPubFilter() {
   const years = [...new Set(readPublications().map(p => p.year).filter(Boolean))].sort((a, b) => b - a);
   const btns = [`      <button data-yr="all" class="active">All</button>`]
@@ -270,6 +286,7 @@ for (const slug of Object.keys(PAGES)) {
   if (main.includes("<!--NEWS_ITEMS-->")) main = main.replace("<!--NEWS_ITEMS-->", renderNews());
   if (main.includes("<!--PUBLICATION_ITEMS-->")) main = main.replace("<!--PUBLICATION_ITEMS-->", renderPublications());
   if (main.includes("<!--PUB_FILTER-->")) main = main.replace("<!--PUB_FILTER-->", renderPubFilter());
+  if (main.includes("<!--RECENT_PUBLICATIONS-->")) main = main.replace("<!--RECENT_PUBLICATIONS-->", renderRecentPublications(3));
   // Lazy-load images that don't already declare a loading strategy (perf / Core Web Vitals).
   main = main.replace(/<img (?![^>]*\bloading=)/gi, '<img loading="lazy" decoding="async" ');
   fs.writeFileSync(path.join(__dirname, slug + ".html"), page(slug, PAGES[slug], main));
