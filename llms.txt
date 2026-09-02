@@ -11,7 +11,7 @@
 ## Pages
 - [Home](https://www.wam-lab.com/index.html): Lab overview, mission, and recent publications.
 - [Research](https://www.wam-lab.com/research.html): Research areas — taxonomies, continuum specification, data science/ML/AI, measurement & methodology, and well-being.
-- [People](https://www.wam-lab.com/people.html): Director, graduate students, postdocs, staff, alumni; also how to join the lab.
+- [People](https://www.wam-lab.com/people.html): Director, graduate students, postdocs, staff, alumni; also how to join the lab. Currently recruiting one graduate student for Fall 2027 via the Purdue I-O Psychology program (https://www.purdueiopsych.com/), seeking strong research experience and interests in AI, research methods, well-being, and character virtues.
 - [Publications](https://www.wam-lab.com/publications.html): Peer-reviewed publications with DOIs.
 - [Resources](https://www.wam-lab.com/resources.html): Free validated psychological scales and methodological tools (SETPOINT, CABIN, CAPTION, CIT/BIT, HELPS, RAISE, ALI, Subjective Underemployment Scale, IRT measurement-equivalence guide), each with dimensions and downloadable instruments.
 - [Talks](https://www.wam-lab.com/talks.html): Talks and webinars (with video) on well-being measurement, big data, ML bias, and experience sampling.
