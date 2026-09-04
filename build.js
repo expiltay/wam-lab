@@ -108,7 +108,7 @@ const PAGES = {
   writing:      { title: "Writing | WAM Lab", desc: "Articles and essays by Louis Tay on graduate training, publishing, mentoring, well-being, and experience sampling." },
   talks:        { title: "Talks | WAM Lab", desc: "Selected talks and webinars by Louis Tay on assessing well-being, big data, machine learning bias, and experience sampling." },
   books:        { title: "Books | WAM Lab", desc: "Edited handbooks and volumes by Louis Tay on positive psychology, well-being, the positive humanities, big data, and measurement." },
-  ema:          { title: "ExpiWell — Experience Sampling (ESM) & Ecological Momentary Assessment (EMA) Platform | WAM Lab", desc: "ExpiWell is a leading experience sampling method (ESM) and ecological momentary assessment (EMA) platform, created by Dr. Louis Tay. Run adaptive mobile diary studies with smart scheduling, notifications, wearable & sensor integration, geofencing, real-time analytics, and participant payments — used by 6,300+ researchers across 1,000+ institutions." },
+  ema:          { title: "ExpiWell — Experience Sampling (ESM) & Ecological Momentary Assessment (EMA) Platform | WAM Lab", desc: "ExpiWell is a leading experience sampling method (ESM) and ecological momentary assessment (EMA) platform, co-founded by Dr. Louis Tay and Justin Rahimi. Run adaptive mobile diary studies with smart scheduling, notifications, wearable & sensor integration, geofencing, real-time analytics, and participant payments — used by 7,000+ researchers across 1,000+ institutions in 20+ countries." },
   "404":        { title: "Page Not Found | WAM Lab", desc: "Page not found." },
 };
 
