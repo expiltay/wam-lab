@@ -1,5 +1,167 @@
 [
   {
+    "title": "Designing for Human Flourishing: A Sociotechnical Framework for AI Chatbots",
+    "authors": "Louis Tay, Karina Vold, Gloria Liou, Harsh Kumar, Daniel Harris, Ashton Anderson",
+    "year": 2026,
+    "venue": "",
+    "url": "https://doi.org/10.31234/osf.io/9fvsk_v1",
+    "doi": "10.31234/osf.io/9fvsk_v1",
+    "tags": []
+  },
+  {
+    "title": "Diagnosing and Repairing Persona Collapse in LLM Advice",
+    "authors": "H V Ravi Kumar, Karina Vold, Louis Tay, Ashton Anderson",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "url": "https://doi.org/10.48550/arxiv.2607.08326",
+    "doi": "10.48550/arxiv.2607.08326",
+    "tags": []
+  },
+  {
+    "title": "Position: We Need Large Language Models Optimized For Our Well-Being",
+    "authors": "Ashton Anderson, Harsh Kumar, Louis Tay, Karina Vold",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "url": "https://doi.org/10.48550/arxiv.2608.07505",
+    "doi": "10.48550/arxiv.2608.07505",
+    "tags": []
+  },
+  {
+    "title": "Helping hands, flourishing hearts: A meta‐analytic study of organizational citizenship behaviors and subjective well‐being",
+    "authors": "Christopher W. Wiese, Victoria S. Scotney, Daphne X. Hou, Louis Tay",
+    "year": 2026,
+    "venue": "Applied Psychology Health and Well-Being",
+    "url": "https://doi.org/10.1111/aphw.70158",
+    "doi": "10.1111/aphw.70158",
+    "tags": []
+  },
+  {
+    "title": "When AI Gives Advice: Evaluating AI and Human Responses to Online Advice-Seeking for Well-Being",
+    "authors": "Harsh Kumar, Jasmine Chahal, Yinuo Zhao, Zeling Zhang, Annika Z Wei, Louis Tay, Ashton Anderson",
+    "year": 2026,
+    "venue": "",
+    "url": "https://doi.org/10.1145/3772318.3791233",
+    "doi": "10.1145/3772318.3791233",
+    "tags": []
+  },
+  {
+    "title": "Bridging Cultures in the Era of Big Data: A Cross-Language Equivalence Framework in Machine-Learning Research With Social Media Texts",
+    "authors": "Daphne Xin Hou, Stuti Thapa, Louis Tay",
+    "year": 2026,
+    "venue": "Advances in Methods and Practices in Psychological Science",
+    "url": "https://doi.org/10.1177/25152459251398713",
+    "doi": "10.1177/25152459251398713",
+    "tags": []
+  },
+  {
+    "title": "A Scoping Review of Randomized Controlled Trials Affecting Subjective Wellbeing",
+    "authors": "Joshua Howard, Louis Tay, Gloria Liou, Amir Mehr, Mathias Harrer, Kostadin Kushlev, Kibum Moon, Erika Patall, Amanda Vite, Frederic Guay, David Bryce Yaden, John Weisz, Sean Toh, Shigehiro Oishi, Joseph Firth, Kenneth Tan, Shufang Sun, Simon Goldberg, Jacinta Brinsley",
+    "year": 2026,
+    "venue": "Open Science Framework",
+    "url": "https://doi.org/10.17605/osf.io/52pzx",
+    "doi": "10.17605/osf.io/52pzx",
+    "tags": []
+  },
+  {
+    "title": "Relational Well-Being Predicts Positive First Impressions More Strongly Than Affective Well-Being",
+    "authors": "Finneaz Moner, Louis Tay, Daniel DongWon Oh",
+    "year": 2025,
+    "venue": "",
+    "url": "https://doi.org/10.17605/osf.io/8pwjt",
+    "doi": "10.17605/osf.io/8pwjt",
+    "tags": []
+  },
+  {
+    "title": "The Assessment of Psychological Richness, Meaning, and Happiness with Social Media Text Data: Predictive Accuracy and Distinct Behavioral Correlates",
+    "authors": "Cavan Vaux Bonner, Young Min Cho, Fanyi Zhang, Louis Tay, Lyle Ungar, Sharath Chandra Guntuku",
+    "year": 2025,
+    "venue": "",
+    "url": "https://doi.org/10.31234/osf.io/38bxw_v2",
+    "doi": "10.31234/osf.io/38bxw_v2",
+    "tags": []
+  },
+  {
+    "title": "When workers’ lives outside work are more fulfilling, it benefits employers too",
+    "authors": "Louis Tay",
+    "year": 2025,
+    "venue": "",
+    "url": "https://doi.org/10.64628/aai.duk9r3wnu",
+    "doi": "10.64628/aai.duk9r3wnu",
+    "tags": []
+  },
+  {
+    "title": "Measuring Constructs",
+    "authors": "Rick H. Hoyle, Denny Borsboom, Louis Tay",
+    "year": 2025,
+    "venue": "",
+    "url": "https://doi.org/10.70400/ouqf7656",
+    "doi": "10.70400/ouqf7656",
+    "tags": []
+  },
+  {
+    "title": "Language-based Valence and Arousal Expressions between the United States and China: a Cross-Cultural Examination",
+    "authors": "Young Min Cho, Dandan Pang, Stuti Thapa, Garrick Sherman, Lyle Ungar, Louis Tay, Sharath Chandra Guntuku",
+    "year": 2025,
+    "venue": "",
+    "url": "https://doi.org/10.18653/v1/2025.findings-naacl.310",
+    "doi": "10.18653/v1/2025.findings-naacl.310",
+    "tags": []
+  },
+  {
+    "title": "Robust Bias Detection in MLMs and its Application to Human Trait Ratings",
+    "authors": "Ingroj Shrestha, Louis Tay, Padmini Srinivasan",
+    "year": 2025,
+    "venue": "",
+    "url": "https://doi.org/10.18653/v1/2025.findings-naacl.272",
+    "doi": "10.18653/v1/2025.findings-naacl.272",
+    "tags": []
+  },
+  {
+    "title": "Author response for \"VALID: A Checklist-Based Approach for Improving Validity in Psychological Research\"",
+    "authors": "Susanne Kerschbaumer, Voracek, Martin, Balázs Aczél, Samantha F. Anderson, Brandon M. Booth, Erin Michelle Buchanan, Rickard Carlsson, Daniel W. Heck, Anu Pauliina Hiekkaranta, Rink Hoekstra, Julian D. Karch, Ginette Lafit, Zhicheng Lin, Siwei Liu, David P. MacKinnon, Emma L. McGorray, David Moreau, Μαριέττα Παπαδάτου-Παστού, Helena Paterson, Robert A. Perera, Daniel J. Schad, David K. Sewell, Moin Syed, Louis Tay, Jorge N. Tendeiro, Michael D. Toland, Wolf Vanpaemel, Don van Ravenzwaaij, Lieke Voncken, Ulrich S. Tran",
+    "year": 2024,
+    "venue": "",
+    "url": "https://doi.org/10.1177/25152459241306432/v2/response1",
+    "doi": "10.1177/25152459241306432/v2/response1",
+    "tags": []
+  },
+  {
+    "title": "The Impact of Department Diversity on Student Persistence and Success in Engineering",
+    "authors": "David R. Waller, Yukiko Maeda, Matthew Ohland, Louis Tay",
+    "year": 2024,
+    "venue": "2021 ASEE Virtual Annual Conference Content Access Proceedings",
+    "url": "https://doi.org/10.18260/1-2--37869",
+    "doi": "10.18260/1-2--37869",
+    "tags": []
+  },
+  {
+    "title": "Three-Item SETPOINT Scale",
+    "authors": "Daphne Xin Hou, Rong Su, Louis Tay",
+    "year": 2024,
+    "venue": "PsycTESTS Dataset",
+    "url": "https://doi.org/10.1037/t91917-000",
+    "doi": "10.1037/t91917-000",
+    "tags": []
+  },
+  {
+    "title": "Single-Item SETPOINT Scale",
+    "authors": "Daphne Xin Hou, Rong Su, Louis Tay",
+    "year": 2024,
+    "venue": "PsycTESTS Dataset",
+    "url": "https://doi.org/10.1037/t91916-000",
+    "doi": "10.1037/t91916-000",
+    "tags": []
+  },
+  {
+    "title": "Basic-Interest Short Scale",
+    "authors": "Daphne Xin Hou, Rong Su, Louis Tay",
+    "year": 2024,
+    "venue": "PsycTESTS Dataset",
+    "url": "https://doi.org/10.1037/t91918-000",
+    "doi": "10.1037/t91918-000",
+    "tags": []
+  },
+  {
     "title": "The baby and the bathwater: On the need for substantive–methodological synergy in organizational research",
     "authors": "Hofmans, J., Morin, A. J. S., Breitsohl, H., Ceulemans, E., Chénard‐Poirier, L. A., Driver, C., … & Wille, B. (incl. Tay, L.)",
     "year": 2021,
