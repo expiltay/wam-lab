@@ -17,9 +17,10 @@ const SOCIAL = {
   linkedin: "https://www.linkedin.com/in/louistay/",
   bluesky:  "https://bsky.app/profile/louistay.bsky.social",
   twitter:  "https://twitter.com/LouisTaySC",
+  youtube:  "https://www.youtube.com/@proflouistay",
 };
 const SAME_AS = [
-  SOCIAL.linkedin, SOCIAL.bluesky, SOCIAL.twitter,
+  SOCIAL.linkedin, SOCIAL.bluesky, SOCIAL.twitter, SOCIAL.youtube,
   "https://scholar.google.com/citations?hl=en&user=5_1xpscAAAAJ",
   "https://www.researchgate.net/profile/Louis_Tay",
   "https://hhs.purdue.edu/directory/louis-tay/",
@@ -28,6 +29,7 @@ const SAME_AS = [
 const ICON = {
   linkedin: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>',
   bluesky:  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.07 3.16c2.69 2.02 5.58 6.11 6.64 8.31.06.13.11.24.16.34.05-.1.1-.21.16-.34 1.06-2.2 3.95-6.29 6.64-8.31C20.81 1.7 23 .53 23 3.04c0 .5-.29 4.21-.46 4.81-.59 2.09-2.72 2.62-4.62 2.3 3.32.56 4.16 2.43 2.34 4.3-3.46 3.55-4.97-.89-5.36-2.02-.07-.21-.1-.3-.1-.22 0-.08-.03.01-.1.22-.39 1.13-1.9 5.57-5.36 2.02-1.82-1.87-.98-3.74 2.34-4.3-1.9.32-4.03-.21-4.62-2.3C1.29 7.25 1 3.54 1 3.04 1 .53 3.19 1.7 5.07 3.16z"/></svg>',
+  youtube:  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>',
   twitter:  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
 };
 
@@ -106,6 +108,7 @@ const PAGES = {
   news:         { title: "News | WAM Lab", desc: "Media coverage of research from the Well-Being, AI, and Measurement Lab." },
   resources:    { title: "Scales & Measures (SETPOINT, CABIN, CAPTION, CIT/BIT, HELPS, RAISE) | WAM Lab", desc: "Free, validated psychological scales from Louis Tay's lab at Purdue: SETPOINT & CABIN vocational interests, CAPTION situation taxonomy, Comprehensive & Brief Inventory of Thriving (CIT/BIT), HELPS help-seeking beliefs, RAISE arts-engagement, ALI, Subjective Underemployment Scale, plus IRT measurement-equivalence tools. Each lists its dimensions and a downloadable instrument." },
   writing:      { title: "Writing | WAM Lab", desc: "Articles and essays by Louis Tay on graduate training, publishing, mentoring, well-being, and experience sampling." },
+  videos:       { title: "Explainer Videos — Research Explained | WAM Lab", desc: "Plain-language video explainers of research from the Well-Being, AI, and Measurement Lab, including the HELPS beliefs about seeking and receiving help and the CAPTION taxonomy of psychological situations." },
   talks:        { title: "Talks | WAM Lab", desc: "Selected talks and webinars by Louis Tay on assessing well-being, big data, machine learning bias, and experience sampling." },
   books:        { title: "Books | WAM Lab", desc: "Edited handbooks and volumes by Louis Tay on positive psychology, well-being, the positive humanities, big data, and measurement." },
   ema:          { title: "ExpiWell — Experience Sampling (ESM) & Ecological Momentary Assessment (EMA) Platform | WAM Lab", desc: "ExpiWell is a leading experience sampling method (ESM) and ecological momentary assessment (EMA) platform, co-founded by Dr. Louis Tay and Justin Rahimi. Run adaptive mobile diary studies with smart scheduling, notifications, wearable & sensor integration, geofencing, real-time analytics, and participant payments — used by 7,000+ researchers across 1,000+ institutions in 20+ countries." },
@@ -118,6 +121,7 @@ const NAV = [
   ["publications.html", "Publications"],
   ["resources.html", "Resources"],
   ["talks.html", "Talks"],
+  ["videos.html", "Videos"],
   ["books.html", "Books"],
   ["ema.html", "EMA"],
 ];
@@ -147,6 +151,7 @@ const footerHTML = `<footer class="site-footer">
         <a href="${SOCIAL.linkedin}" target="_blank" rel="noopener" aria-label="LinkedIn">${ICON.linkedin}</a>
         <a href="${SOCIAL.bluesky}" target="_blank" rel="noopener" aria-label="Bluesky">${ICON.bluesky}</a>
         <a href="${SOCIAL.twitter}" target="_blank" rel="noopener" aria-label="X (Twitter)">${ICON.twitter}</a>
+        <a href="${SOCIAL.youtube}" target="_blank" rel="noopener" aria-label="YouTube">${ICON.youtube}</a>
       </p>
     </div>
     <div class="footer-nav">
