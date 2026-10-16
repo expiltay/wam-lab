@@ -540,6 +540,13 @@ section { padding: 64px 0; }
   cursor: pointer;
   transition: background .2s ease, transform .2s ease;
 }
+.yt-corner .yt-play { left: auto; top: auto; right: 14px; bottom: 14px; transform: none; }
+.yt-corner:hover .yt-play { transform: scale(1.06); }
+.meet-io { display: grid; grid-template-columns: 1.1fr 1fr; gap: 1.6rem; align-items: center; text-align: left; margin: 1.8rem 0; }
+.meet-io .yt { display: block; }
+.meet-io h3 { margin: 0 0 .5em; }
+.meet-io p { margin: 0 0 .9em; }
+@media (max-width: 700px) { .meet-io { grid-template-columns: 1fr; } }
 .yt:hover .yt-play { background: #cc0000; transform: translate(-50%, -50%) scale(1.06); }
 .yt-play::before {
   content: "";
